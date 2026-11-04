@@ -1,0 +1,12 @@
+﻿name: MyAction
+on: push
+
+jobs:
+  MyBuild:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Project
+        run: dotnet run
